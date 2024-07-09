@@ -1,0 +1,298 @@
+*{
+font-family: sans-serif;
+}
+
+.continer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.skidka {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 44px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #454f5b;
+}
+
+.skidka h1 {
+    font-family: 'SF Pro Display';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 452px;
+    padding-right: 197px;
+    /* padding-top: 9px; */
+}
+
+.skidka a h2 {
+    /* padding-bottom: 9px; */
+    color: #ffffff;
+    font-family: 'SF Pro Display';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    text-align: left;
+}
+
+.skidka a {
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 82px;
+    gap: 0px;
+    opacity: 0px;
+    border-bottom: 1px solid #e1e6ea;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.logo {
+    margin-right: 100px;
+}
+
+.header__wrapper select {
+    border: none;
+}
+
+.header__wrapper p {
+    font-family: 'SF Pro Text';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23.87px;
+    text-align: left;
+    color: #161C24;
+}
+
+.header__wrapper select {
+    font-family: 'SF Pro Text';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23.87px;
+    text-align: left;
+    color: #161C24;
+}
+
+.header__wrapper p:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+.header__wrapper select:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+.glavniy {
+    font-family: 'SF Pro Text';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+.glavniy span {
+    font-family: 'SF Pro Text';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #cbc8cb;
+}
+
+.H1 {
+    font-family: 'SF Pro Text';
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+    color: #000000;
+}
+
+.H1 span {
+    font-family: 'SF Pro Text';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #000000;
+    text-align: left;
+}
+
+.categorys {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.categorys button {
+    width: 288px;
+    height: 40px;
+    top: 286px;
+    left: 100px;
+    padding: 7px 72px 7px 72px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background-color: transparent;
+    border: 1px solid #ADD7FF
+}
+
+.categorys h2 {
+    font-family: 'SF Pro Text';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-left: 31px;
+}
+
+.categorys h2 span {
+    width: 9.33px;
+    height: 9.33px;
+    top: 2.33px;
+    left: 2.33px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    color: #E44286;
+    margin-right: 520px;
+}
+
+.categorys select {
+    width: 194px;
+    height: 40px;
+    top: 286px;
+    left: 1151px;
+    padding: 7px 16px 7px 16px;
+    gap: 16px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #C4CDD5
+}
+
+.filter {
+    width: 288px;
+    height: 460px;
+    top: 358px;
+    left: 100px;
+    padding: 24px 0px 0px 24px;
+    gap: 10px;
+    border-radius: 2px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #C4CDD5
+}
+
+.filter button {
+    width: 116px;
+    height: 44px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background-color: transparent;
+    border: 1px solid #EAEAEA
+}
+
+.filter button:hover {
+    cursor: pointer;
+    border: 1px solid #4295E4
+}
+.filter select{
+    width: 240px;
+    height: 26px;
+    gap: 0px;
+    opacity: 0px;
+    border: none;
+    margin-top: 32px;
+    border-top: 1px solid #f6f6f6;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 924px;
+    gap: 20px;
+    opacity: 0px;
+    /* border: 1px solid black; */
+}
+.card{
+    width: 288px;
+    height: 453px;
+    gap: 0px;
+    opacity: 0px;    
+    border: 1px solid #f4f4f4;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.card h2{
+    font-family: 'SF Pro Text';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #454F5B;
+}
+.card h1{
+    font-family: 'SF Pro Text';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.87px;
+    text-align: left;    
+    color: #161C24;
+}
+.card p{
+    font-family: 'SF Pro Text';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.48px;
+    text-align: left;   
+    color: #454F5B; 
+}
+.details{
+display: flex;
+gap: 200px;
+}
+.details img{
+margin-left: 100px;
+margin-top: 30px;
+width: 300px;
+height: 400px;
+}
+.narx{
+display: flex;
+gap: 10px;
+}
+.narx h3{
+color: #454F5B;
+}
+.karzinka_button{
+    width: 288px;
+    height: 40px;
+    top: 286px;
+    left: 100px;
+    padding: 7px 72px 7px 72px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #ADD7FF;
+    border: 1px solid #ADD7FF
+}
