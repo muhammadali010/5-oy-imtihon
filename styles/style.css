@@ -23,7 +23,7 @@ font-family: sans-serif;
 }
 
 .skidka h1 {
-    font-family: 'SF Pro Display';
+    font-family: 'sans-serif';
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
@@ -38,7 +38,7 @@ font-family: sans-serif;
 .skidka a h2 {
     /* padding-bottom: 9px; */
     color: #ffffff;
-    font-family: 'SF Pro Display';
+    font-family: 'sans-serif';
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
@@ -76,7 +76,7 @@ font-family: sans-serif;
 }
 
 .header__wrapper p {
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 20px;
     font-weight: 300;
     line-height: 23.87px;
@@ -85,7 +85,7 @@ font-family: sans-serif;
 }
 
 .header__wrapper select {
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 20px;
     font-weight: 300;
     line-height: 23.87px;
@@ -104,7 +104,7 @@ font-family: sans-serif;
 }
 
 .glavniy {
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -112,7 +112,7 @@ font-family: sans-serif;
 }
 
 .glavniy span {
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -121,7 +121,7 @@ font-family: sans-serif;
 }
 
 .H1 {
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 28px;
     font-weight: 600;
     line-height: 42px;
@@ -130,7 +130,7 @@ font-family: sans-serif;
 }
 
 .H1 span {
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 18px;
     font-weight: 300;
     line-height: 28px;
@@ -157,7 +157,7 @@ font-family: sans-serif;
 }
 
 .categorys h2 {
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -243,8 +243,12 @@ font-family: sans-serif;
     margin-bottom: 40px;
     cursor: pointer;
 }
+.card img{
+width:288px ;
+height: 300px;
+}
 .card h2{
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -252,24 +256,36 @@ font-family: sans-serif;
     color: #454F5B;
 }
 .card h1{
-    font-family: 'SF Pro Text';
+    font-family: 'sans-serif';
     font-size: 20px;
     font-weight: 600;
     line-height: 23.87px;
     text-align: left;    
     color: #161C24;
 }
-.card p{
-    font-family: 'SF Pro Text';
+.card p:nth-child(1){
+    font-family: 'sans-serif';
     font-size: 18px;
     font-weight: 300;
     line-height: 21.48px;
     text-align: left;   
     color: #454F5B; 
 }
+.card p:nth-child(2){
+    font-family: 'sans-serif';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.48px;
+    text-align: left;   
+    color: #454F5B; 
+    text-decoration:line-through;
+}
 .details{
 display: flex;
 gap: 200px;
+}
+.details h1{
+margin-top: 80px;
 }
 .details img{
 margin-left: 100px;
@@ -277,8 +293,12 @@ margin-top: 30px;
 width: 300px;
 height: 400px;
 }
+.details h3{
+text-decoration: line-through;
+}
 .narx{
 display: flex;
+align-items: center;
 gap: 10px;
 }
 .narx h3{
@@ -293,6 +313,255 @@ color: #454F5B;
     gap: 10px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
-    background-color: #ADD7FF;
-    border: 1px solid #ADD7FF
+    cursor: pointer;
+    background-color: #0987fd;
+    border: 1px solid #0686fd
+}
+.cart{
+    margin: 0 auto;
+    width: 836px;
+    height: 394px;
+    top: 169px;
+    left: 280px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 50px;
+    background-color: #FFFFFF;    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cart__sidebar{
+    width: 836px;
+height: 66px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cart__sidebar h1{
+    font-family: 'sans-serif';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+    margin-top: 34px;    
+    margin-left: 40px;
+}
+.cart__img img{
+width: 136px;
+height: 120px;
+margin-top: 24px;
+margin-left: 40px;
+}
+.cart__wrapper{
+display: flex;
+}
+.cart__name h2{
+    font-family: 'sans-serif';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    margin-top: 24px;
+    margin-left: 12px;
+}
+.cart__name p{
+    font-family: 'sans-serif';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;    
+}
+.cart__name p a{
+color: #7db6ec
+}
+.udalit{
+    width: 127px;
+height: 30px;
+top: 90px;
+left: 699px;
+gap: 12px;
+opacity: 0px;
+margin-left: 200px;
+margin-top: 30px;
+border: none;
+background-color: transparent;
+color:red;
+cursor: pointer;
+}
+.cart__price{
+margin-left: 235px;
+margin-top: 68px;
+font-family: 'sans-serif';
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+color: #161C24;
+}
+.itogo{
+display: flex;
+}
+.itogo h1{
+    font-family: 'sans-serif';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 36px;
+    margin-left: 40px;
+}
+.itogo h1 span{
+    font-family: 'sans-serif';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+}
+.zakaz_button{
+    width: 249px;
+    height: 44px;
+    padding: 9px 64px 9px 64px;
+    gap: 10px;
+    opacity: 0px;    
+    margin-left: 40px;
+    background-color: #4295E4;
+    border-color: blue;
+    cursor: pointer;
+}
+.itogo a button{
+margin-left: 300px;
+margin-top: 69px;
+width: 216px;
+height: 46px;
+padding: 10px 24px 10px 24px;
+gap: 10px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+border: 1px solid #ADD7FF;
+background-color: transparent;
+}
+.itogo a button:hover{
+background-color: #0686fd;
+}
+.posledniy{
+display: flex;
+gap: 30px;
+}
+.contents{
+display: flex;
+margin-top: 96px;
+}
+.content{
+margin-top: 50px;
+margin-right: 150px;
+}
+.content h1{
+    font-family: 'sans-serif';
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+}
+.content p{
+    font-family: 'sans-serif';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;    
+}
+.contents2{
+display: flex;
+margin-top: 82px;
+}
+.contents2_img{
+margin-right: 30px;
+}
+.content2 h1{
+    font-family: 'sans-serif';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;    
+}
+.content2 p{
+    font-family: 'sans-serif';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;    
+}
+.content2{
+margin-top: 140px;
+}
+.data{
+    width: 1440px;
+    height: 332px;
+    top: 4418px;
+    gap: 0px;
+    opacity: 0px;
+    align-items: center;
+    background-color: #F2F8FF;    
+    margin-top: 100px;
+}
+.data h1{
+margin-left: 487px;
+font-family: 'sans-serif';
+font-size: 44px;
+font-weight: 600;
+line-height: 62px;
+text-align: left;
+padding-top: 70px;
+}
+.data p{
+/* margin-left: 441px; */
+font-family: 'sans-serif';
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color:#454F5B;
+}
+.data form{
+margin-left: 346px;
+}
+form input{
+    width: 240px;
+    height: 50px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #e9eff6; 
+    border: none;   
+}
+form button{
+    width: 220px;
+    height: 50px;
+    left: 528px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #4295E4;    
+    border: none;   
+}
+.links{
+    display: flex;
+    width: 1440px;
+    height: 448px;
+    /* gap: 1000px; */
+    opacity: 0px;
+    background-color: #0d2436;    
+    padding-top: 55px;
+    align-items: center;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+.links h1{
+color: #FFFFFF;
+font-family: 'sans-serif';
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+text-align: left;
+}
+.links p{
+    font-family: 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;    
+    color: #86919a;
 }

@@ -22,7 +22,21 @@ function createCard(product) {
 </div>
     `
 }
-
+function createCard2(product) {
+    return `
+    <div class="card" data-id = "${product.id}">
+    <img src='${product.image}' alt="img">
+    <div style="display: flex; align-items: center; gap: 12px;">
+    <p>star:${product.star}</p>
+    <p>comments(${product.comments})</p>
+</div>
+    <h2>${product.name}</h2>
+    <div style="display: flex; align-items: center; gap: 12px;">
+    <h1>₽${product.newPrice}</h1>
+    <p>₽${product.oldPrice}</p>
+</div>
+    `
+}
 function createDetails(product) {
     return `
     <div>
@@ -41,4 +55,7 @@ function createDetails(product) {
     `
 }
 
-export {getData,createCard,createDetails};   
+
+export {getData,createCard,createDetails,createCard2};   
+
+

@@ -1,29 +1,45 @@
-import { getData,createCard } from "./function.js";
+import { getData, createCard ,createCard2 } from "./function.js";
+import { createCart } from "./cart.js";
 
 const wrapper = document.getElementById('wrapper');
 
-
-
-
-document.addEventListener('DOMContentLoaded',function () {
+document.addEventListener('DOMContentLoaded', function () {
     getData('https://cars-pagination.onrender.com/products')
-    .then(data => {
-    data.forEach(product => {
-            let card = createCard(product);
-            wrapper.innerHTML += card;  
-        });
-const cards = document.querySelectorAll('.card')
-cards.length > 0 && cards.forEach(function (card) {
-    card.addEventListener('click',function (event) {
-            const cardId = this.getAttribute('data-id');
-            if (cardId) {
-                window.location.assign(`http://127.0.0.1:5500/pages/details.html?id=${cardId}`)
-            }
-    })
-})
+        .then(data => {
+            const slicedData = data.slice(1, 13);
+            slicedData.forEach(product => {
+                let card = createCard(product);
+                wrapper.innerHTML += card;
+            });
 
+            const cards = document.querySelectorAll('.card');
+            cards.length > 0 && cards.forEach(function (card) {
+                card.addEventListener('click', function (event) {
+                    const cardId = this.getAttribute('data-id');
+                    if (cardId) {
+                        window.location.assign(`http://127.0.0.1:5500/pages/details.html?id=${cardId}`);
+                    }
+                });
+            });
         })
         .catch(err => {
-        console.log(err);
+            console.log(err);
+        });
+});
+
+
+const posledniy = document.getElementById('posledniy');
+
+document.addEventListener('DOMContentLoaded', function () {
+    getData('https://cars-pagination.onrender.com/products')
+        .then(data => {
+            const slicedData = data.slice(1, 5);
+            slicedData.forEach(product => {
+                let card = createCard2(product);
+                posledniy.innerHTML += card;
+            });
         })
-})
+        .catch(err => {
+            console.log(err);
+        });
+});
