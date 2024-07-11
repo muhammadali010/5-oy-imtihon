@@ -1,5 +1,4 @@
 import { getData, createCard ,createCard2 } from "./function.js";
-import { createCart } from "./cart.js";
 
 const wrapper = document.getElementById('wrapper');
 
