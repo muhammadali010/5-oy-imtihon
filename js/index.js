@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 });
 
-
 const posledniy = document.getElementById('posledniy');
 
 document.addEventListener('DOMContentLoaded', function () {
     getData('https://cars-pagination.onrender.com/products')
         .then(data => {
-            const slicedData = data.slice(1, 5);
+            const filteredData = data.filter(product => product.category === 'средний');
+            const slicedData = filteredData.slice(0, 4);
             slicedData.forEach(product => {
                 let card = createCard2(product);
                 posledniy.innerHTML += card;
